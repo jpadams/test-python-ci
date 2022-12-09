@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: '3.10'
       - uses: actions/checkout@v3
-      - name: Install Dagger Package
+      - name: Install Dagger package
         run: pip install dagger-io
-      - name: Run Dagger Pipeline
+      - name: Run Dagger pipeline
         run: python main.py
