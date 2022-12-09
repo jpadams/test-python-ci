@@ -15,4 +15,3 @@ jobs:
       - run: |
           pip install dagger-io
           python dagger.py
-        shell: bash
