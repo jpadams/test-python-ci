@@ -12,4 +12,7 @@ jobs:
         with:
           python-version: '3.11'
       - uses: actions/checkout@v3
-      - run: python dagger.py
+      - run: |
+          pip install anyio dagger-io
+          python dagger.py
+        shell: bash
