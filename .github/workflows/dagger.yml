@@ -1,0 +1,15 @@
+name: dagger
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - uses: actions/checkout@v3
+      - run: python dagger.py
