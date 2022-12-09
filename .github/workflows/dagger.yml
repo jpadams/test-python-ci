@@ -13,6 +13,6 @@ jobs:
           python-version: '3.10'
       - uses: actions/checkout@v3
       - run: |
-          pip uninstall dagger
+          pip uninstall dagger-io
           pip install dagger-io
           python main.py
